@@ -75,7 +75,7 @@ So, put the numbers in the list to confirm that the same number is not repeated.
 > > It is also used to check if git is installed in the container.
 > ```command
 > $ docker exec <container-name> python3 --version
-> 
+> Python 3.12.3
 > ```
 > > **python3 --version** : Command to check the version of python in the contatiner \
 > > It is also used to check if python3 is installed in the container.
@@ -85,4 +85,4 @@ So, put the numbers in the list to confirm that the same number is not repeated.
 > ```
 > > **inspect --format="{{ .HostConfig.Binds }}"** : Commands to check the mount information for that container on the host \
 > > (Data may be stored by connecting the directory of the host server and the directory of the container.) \
-> > In my ouput, host directory is </home/hjii/2024/ossp> and container directory is </mnt/container_dir>
+> > In my ouput, host directory is </home/hjii/2024/ossp> and connected container directory is </mnt/container_dir>.
